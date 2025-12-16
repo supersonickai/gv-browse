@@ -5,7 +5,21 @@
 </head>
   <body>
       <div id="gv_tabs"></div>
-      <iframe src="https://gv-browser.mmcginnis01.workers.dev/?url=https://itch.io"></iframe>
+      <iframe src="https://gv-browser.mmcginnis01.workers.dev/?url=https://itch.io" id="frame"></iframe>
       <button onclick="newTab('https://itch.io')">open itch?</button>
+      <style>
+          html,body {
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+          }
+          #frame {
+              width: 100%;
+              height: 100%;
+              border: none;
+          }
+      </style>
   </body>
 </html>
